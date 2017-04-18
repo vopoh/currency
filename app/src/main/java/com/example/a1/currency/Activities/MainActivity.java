@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnActTwo = (FloatingActionButton) findViewById(R.id.fabGotoNextScreen);
 
+
         btnActTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
