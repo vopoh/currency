@@ -1,6 +1,7 @@
 package com.example.a1.currency.Activities;
 
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
@@ -14,9 +15,10 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 
-public class ActivityThree extends AppCompatActivity {
+public class ActivityThree extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private static final String TEXTVIEW_STATE_KEY = "HUFIOSADGIO";
+    private SwipeRefreshLayout mSwipeRefreshLayout;
 
     String base;
     String to;
@@ -65,4 +67,8 @@ public class ActivityThree extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onRefresh() {
+
+    }
 }
